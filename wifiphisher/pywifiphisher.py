@@ -572,9 +572,7 @@ class WifiphisherEngine:
             # copy payload to update directory
             while not payload_path or not os.path.isfile(payload_path):
                 # get payload path
-                payload_path = eval(input(
-                    "[" + G + "+" + W + "] Enter the [" + G + "full path" + W +
-                    "] to the payload you wish to serve: "))
+                payload_path = eval('input("[" + G + "+" + W + "] Enter the [" + G + "full path" + W +"] to the payload you wish to serve: ")')
                 if not os.path.isfile(payload_path):
                     print('[' + R + '-' + W + '] Invalid file path!')
             print('[' + T + '*' + W + '] Using ' + G + payload_path + W + ' as payload ')
